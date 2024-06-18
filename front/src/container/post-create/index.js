@@ -29,7 +29,7 @@ export default function Container({
       const data = await res.json();
 
       if (res.ok) {
-        setStatus(null);
+        setStatus(LOAD_STATUS.SUCCESS);
         if (onCreate) onCreate();
       } else {
         setMessage(data.message);

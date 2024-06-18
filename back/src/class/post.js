@@ -13,7 +13,6 @@ class Post {
     const newPost = new Post(username, text)
     if (post) {
       post.reply.push(newPost)
-      console.log(post)
     } else {
       this.#list.push(newPost)
     }
